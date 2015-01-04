@@ -25,7 +25,7 @@ html,body{
 .item > .col-md-4 {
     width: 49.33333333%;
     padding: 0px !important;
-    border: 1px solid red
+    margin: 0px !important;
 }
 .carousel-inner .active.left { left: -33%; }
 .carousel-inner .next        { left:  33%; }
@@ -33,7 +33,12 @@ html,body{
 .carousel-control.left,.carousel-control.right {background-image:none;}
 ul.carousel-inner{
     height: 350px;
-    overflow: hidden;          
+    overflow: hidden; 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: gray;
 } 
 ul.carousel-inner li{
     height: 350px;
@@ -83,4 +88,7 @@ ul.carousel-inner>li.item > a >img{
 .home-image-slide-modal-size{
     position: absolute;  
 }
-
+#idms-slide-left .carousel-control,
+#idms-slide-left .carousel-control{
+    width: 12%;
+}
